@@ -6,8 +6,7 @@
 2.新浪微博Api；
 3.Android平台SQlite；
 4.Android平台UI设计；
-5.Android WebView技术；
-6.友盟统计分析服务使用；
+5.友盟统计分析服务使用；
 
 市场地址：
 http://www.appchina.com/soft_detail_115940_0_10.html
