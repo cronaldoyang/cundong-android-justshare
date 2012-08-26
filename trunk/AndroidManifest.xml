@@ -24,6 +24,7 @@
             android:name=".ShareMainActivity"
             android:label="@string/app_name" >
         </activity>
+        <meta-data android:value="4ddc7840431fe30f33000004" android:name="UMENG_APPKEY"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

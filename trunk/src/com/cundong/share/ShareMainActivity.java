@@ -35,6 +35,7 @@ import com.cundong.share.util.NetworkUtils;
 import com.cundong.share.util.StringUtils;
 import com.cundong.share.util.WeiboUtils;
 import com.cundong.share.util.DialogUtils.DialogCallBack;
+import com.umeng.analytics.MobclickAgent;
 import com.weibo.net.AccessToken;
 import com.weibo.net.DialogError;
 import com.weibo.net.Oauth2AccessTokenHeader;
@@ -90,11 +91,13 @@ public class ShareMainActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
+		MobclickAgent.onPause(this);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
+		MobclickAgent.onResume(this);
 	}
 
 	private void initView(){
