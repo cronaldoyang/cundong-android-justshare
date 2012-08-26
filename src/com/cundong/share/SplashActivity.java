@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.umeng.analytics.MobclickAgent;
+
 /** 
  * 类说明：   乐分享 启动界面
  * @author  @Cundong
@@ -59,5 +61,17 @@ public class SplashActivity extends Activity
 				}
 			}
 		}.start();
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		MobclickAgent.onResume(this);
 	}
 }
